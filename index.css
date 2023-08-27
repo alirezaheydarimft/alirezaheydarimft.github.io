@@ -1,0 +1,243 @@
+body {
+    position: relative;
+}
+
+.head {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: gray;
+    transition: 1s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head:hover {
+    background-color: aliceblue;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Nas";
+    src: url(fonts/IranNastaliq.ttf)format(truetype);
+}
+
+.holder a {
+    font-family: "Nas";
+    text-decoration: none;
+    margin: 50px 70px;
+    padding: 5px 30px;
+    background-color: blue;
+    border-radius: 10px;
+    color: aqua;
+    transition: 1s;
+    box-shadow: 0px 10px 0px 0px rgb(0, 110, 255);
+}
+
+.holder a:hover {
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgb(0, 110, 255);
+}
+
+body {
+    background-color: darkcyan;
+}
+
+.content {
+    position: relative;
+    top: 120px;
+    margin: auto;
+    width: 99%;
+    height: auto;
+    margin-bottom: 130px;
+    background-color: rgb(91, 243, 172);
+    border-radius: 10px;
+}
+
+.title {
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px white;
+}
+
+
+.holderA {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    width: 100%;
+    aspect-ratio: 5/2;
+    background-color: rgb(222, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px black solid;
+}
+
+.circle {
+    height: 90%;
+    aspect-ratio: 1;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.layer {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.flag:hover .layer {
+    animation: nazi 10s linear infinite;
+}
+
+@keyframes nazi {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(-315deg);
+    }
+}
+
+.part {
+    width: 70%;
+    aspect-ratio: 1;
+    position: absolute;
+    display: inline;
+}
+
+.square1 {
+    width: 50%;
+    aspect-ratio: 3/1;
+    background-color: black;
+    position: absolute;
+    right: 0;
+}
+
+.square2 {
+    height: 60%;
+    aspect-ratio: 1/3;
+    background-color: black;
+    position: absolute;
+    left: 40%;
+}
+
+.hldr {
+    width: 1000px;
+    margin: auto;
+}
+
+.hldr img {
+    border-radius: 10px;
+}
+
+.card-container {
+    margin: auto;
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card .front-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .front-content p {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 1;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.card .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    pointer-events: none;
+    transform: translateY(96%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.card:hover .content {
+    width: 90%;
+    transform: translateY(0);
+}
+
+.card:hover .front-content {
+    transform: translateY(-30%);
+}
+
+.card:hover .front-content p {
+    opacity: 0;
+}

@@ -1,0 +1,422 @@
+body {
+    position: relative;
+}
+
+.head {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: gray;
+    transition: 1s;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head:hover {
+    background-color: aliceblue;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Nas";
+    src: url(fonts/IranNastaliq.ttf)format(truetype);
+}
+
+.holder a {
+    font-family: "Nas";
+    text-decoration: none;
+    margin: 50px 70px;
+    padding: 5px 30px;
+    background-color: blue;
+    border-radius: 10px;
+    color: aqua;
+    transition: 1s;
+    box-shadow: 0px 10px 0px 0px rgb(0, 110, 255);
+}
+
+.holder a:hover {
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgb(0, 110, 255);
+}
+
+body {
+    background-color: darkcyan;
+}
+
+.content {
+    position: relative;
+    top: 120px;
+    margin: auto;
+    width: 99%;
+    height: auto;
+    background-color: rgb(91, 243, 172);
+    border-radius: 10px;
+}
+
+.title {
+    margin: auto;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px white;
+}
+
+
+@font-face {
+    font-family: Roya;
+    src: url(fonts/roya.ttf)format(truetype);
+}
+
+.cards {
+    font-family: Roya;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 1px 3px 17px -10px #969696;
+    width: 300px;
+    height: auto;
+    display: inline-block;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.card:hover {
+    box-shadow: 1px 3px 17px -10px black;
+    width: 320px;
+}
+
+.heading {
+    padding: 20px;
+    padding-bottom: 0;
+    display: grid;
+    font-weight: bold;
+    direction: rtl;
+}
+
+.location {
+    padding-right: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    color: rgb(0, 132, 255);
+    float: right;
+    color: #00c4ff;
+    text-shadow: 0px -1px 6px #4ad7c8;
+}
+
+.state {
+    padding-left: 20px;
+    margin-top: 5px;
+    display: inline-block;
+    color: rgb(141, 141, 141);
+    float: left;
+}
+
+.image {
+    padding-top: 10px;
+    width: 100%;
+    border-top-right-radius: 40px;
+}
+
+.cover {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.info {
+    position: absolute;
+    bottom: 12px;
+    left: 5px;
+    border-radius: 12px;
+    background: rgba(30, 30, 30, 0.7);
+    padding: 2px 4px;
+    color: #fff;
+    font-size: 80%;
+}
+
+.detail {
+    direction: rtl;
+    padding-right: 10px;
+    margin-top: 5px;
+    color: black;
+    font-size: 80%
+}
+
+.price {
+    padding: 10px 20px;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 10px 4px -9px #00000025;
+}
+
+.cost {
+    font-weight: bold;
+    direction: rtl;
+    padding: 10px;
+    color: #6A89CC;
+}
+
+.rial {
+    color: #A0A6B7;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.frm {
+    background-color: lightblue;
+    border-radius: 6px;
+    color: rgb(38, 0, 255);
+    border: 1px dashed black;
+    font-weight: 900;
+    text-shadow: 2px 2px gray;
+}
+
+.names {
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+    border: 2px blueviolet outset;
+    box-shadow: green 4px 4px;
+    transition: 1.5s;
+    background-color: gray;
+}
+
+.names:hover {
+    box-shadow: none;
+}
+
+.names::placeholder {
+    background-color: aquamarine;
+    color: gray;
+}
+
+.gender {
+    margin: 5px;
+    border-radius: 10px;
+    color: blueviolet;
+}
+
+.date {
+    margin: 5px;
+    color: rgb(234, 0, 255);
+    background-color: rgb(0, 255, 115);
+    border-radius: 10px;
+}
+
+.work {
+    margin: 10px;
+}
+
+.work:active {
+    color: white;
+}
+
+.email {
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px red solid;
+    text-align: center;
+    color: white;
+    background-color: gray;
+}
+
+.email::placeholder {
+    color: gray;
+    background-color: aquamarine;
+}
+
+.password {
+    margin: 10px;
+    border-radius: 10px;
+    border: blue 2px solid;
+    text-align: center;
+    color: white;
+    background-color: grey;
+}
+
+.password::placeholder {
+    color: gray;
+    background-color: aquamarine;
+}
+
+.moreinfo {
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px black dashed;
+    resize: vertical;
+}
+
+.moreinfo::placeholder {
+    padding: 5px;
+}
+
+.handler {
+    width: 100%;
+    color: red;
+    border-top: 3px black solid;
+}
+
+.submit {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-left: 2px black solid;
+}
+
+.reset {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-right: 2px black solid;
+}
+
+.btnS {
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+.btnR {
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+}
+
+.about {
+    width: 95%;
+    height: 1000px;
+    margin: auto;
+    background-color: red;
+}
+
+body,
+html {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.star-wars-intro {
+    background: url("wp12241477-beautiful-galaxy-wallpapers.jpg") center center;
+    width: 100%;
+    height: 100%;
+    font-family: "Droid Sans", arial, verdana, sans-serif;
+    font-weight: 700;
+    color: #EBD71C;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.star-wars-intro .main-content {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: 3;
+    width: 98%;
+    height: 50em;
+    bottom: 0;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: justify;
+    overflow: hidden;
+    transform-origin: 50% 100%;
+    transform: perspective(350px) rotateX(25deg);
+}
+
+.star-wars-intro .main-content:after {
+    position: absolute;
+    content: ' ';
+    top: 0;
+    bottom: 60%;
+    background-image: linear-gradient(top, rgba(0, 0, 0, 1) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.star-wars-intro .title-content {
+    position: absolute;
+    top: 100%;
+    animation: scroll 120s linear 0s;
+}
+
+.content-body {
+    animation: shit 1ms infinite;
+    animation-delay: 120s;
+}
+
+@keyframes shit {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.star-wars-intro .title-content>.content-header {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -170%;
+    }
+}
